@@ -1,0 +1,416 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+main {
+    min-height: 100vh;
+    width:100%;
+    background: url("https://images.unsplash.com/photo-1560801530-34efebfecba8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+}
+
+/*navigation*/
+.container-header{
+    margin: 0 auto;
+}
+.container-menu{
+    max-width: 700px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #5C2B1E;
+    color: #EFEFEF; 
+}
+nav .container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.menu-button{
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        margin-right: 20px;
+        padding: 10px 20px;
+        background-color:#dd0b0b;
+}
+.nav-menu{
+    background-color:#FFC7CC;
+    color: #EFEFEF;
+    display: flex;
+    justify-content: center; 
+}
+.nav-menu .container-menu{
+    padding: 1.5em;
+    display: flex; 
+}
+.nav-menu .container-menu ul {
+    list-style: none; 
+}
+.container-menu ul li{
+    padding: .25em 2em;
+    text-transform: uppercase;
+}
+.container-menu ul li:first-child {
+    text-transform: uppercase;
+    color: #dd1010;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+.container-menu a{
+    list-style: none;
+    color:rgb(65, 21, 10);
+    text-decoration: none;
+}
+.hide {
+    display: none; 
+}
+.logo img{
+    width:100px;
+    margin-top:15px;
+}
+
+/* running text*/
+.showcase{
+    Width:400px;
+    height:200px;
+    margin:150px auto;
+}
+.showcase h1{
+    font-size: 3rem;
+    color:rgb(240, 8, 46);
+    text-shadow: #fff 2px 2px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.text-js{
+    opacity: 0;
+}
+
+
+/*LOCATIONS*/
+
+.location {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:#DB8C8A;
+    
+}
+.loc img{
+    width:70px;
+    float: left;
+    margin-left: 20px;
+}
+.loc {
+    background-color:#f7f0f2
+}
+.location > div{
+    border: rgb(231, 6, 6) 2px solid;
+    padding:5px 5px 5px;
+    width:300px;
+    height: 150px;
+    margin-top: 50px;
+}
+.location h4{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(15, 14, 14);
+}
+.loc h5, address{
+    text-align:center;
+    font-size:16px;
+    padding:15px 15px;
+    font-weight: bolder;
+    color: rgb(17, 12, 11);
+}
+/*FLAVOR*/
+
+.flavor{
+    min-height: 100vh;
+    background-color: rgb(126, 38, 38);
+}
+#katiesflavor{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap; 
+    align-content: center;
+    
+}
+#katiesflavor span, h4{
+    width:100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size:35px;
+    color:#F1F1F1;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+#katiesflavor div{
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#katiesflavor li{
+    font-size:16px;
+    color:whitesmoke;
+    padding:2px 2px;
+    font-weight: 600;
+}
+.popular p, h5{
+    font-size:16px;
+    text-align: left;
+    color: #cf8080;;
+}
+.others{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.others > div{
+    padding:5px 5px 5px;
+    align-content: space-between;
+    width:400px; 
+}
+.others p{
+    width:100%;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color:#F1F1F1;
+    font-weight:600;
+    padding-bottom: 5px;
+}
+.others li{
+    font-size:16px;
+    color: whitesmoke;
+    padding:2px 2px;
+    font-weight:600;
+}
+
+/*nutritional-info*/
+
+.nutri-info{
+    min-height: 80vh;
+    text-align: center;
+    background-color:#DB959B;
+}
+.nutri h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.nutri h3{
+    padding-bottom: 30px;
+}
+.nutritional{
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+}
+.calories{
+    width: 375px;
+    height: 500px;
+    border:2px rgb(247, 239, 239) solid;
+    background-color:#DB4B6F;
+}
+.calories img{
+    padding-top:30px;
+}
+.calories h3, h5{
+    padding-top:10px;
+    text-align: center;
+    color:#F1F1F1;
+}
+
+/*KATIES HISTORY*/
+
+.history{
+    max-height: fit-content;
+    background-color: rgb(153, 88, 113);
+}
+
+.katies{
+    padding-top:20px;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+.katies img{
+    width:500px;
+    padding:50px 30px;
+}
+.storeStory{
+    width:650px;
+}
+.katies p {
+    text-align:justify;
+    letter-spacing: 1.5px;
+    color:#fff;
+}
+.katies h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
+}
+
+/*iCECREAM HISTORY*/
+
+#icecream{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#icecream h2{
+    text-align: center;
+    color:red;
+    margin-top:10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
+}
+
+#icecream > div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:10px;
+    padding-left:10px;
+    border: 2px solid rgb(202, 7, 7);
+    color:whitesmoke;
+}
+
+#icecream li{
+    display: flex;
+    padding:5px 5px 5px;  
+    font-size: 16px; 
+}
+
+
+/*TRIVIA*/
+.trivia{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    align-content: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.trivia div{
+    border: 2px solid rgb(202, 7, 7);
+    padding:5px 5px 5px;
+    width:300px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.trivia span, .h2{
+    width:100%;
+    margin-bottom: 10px;
+    padding-top:10px;
+    font-size: 20px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
+}
+.trivia li{
+    display: flex;
+    text-align: justify;
+    padding:5px;
+    color:whitesmoke;
+}
+.trivia img{
+    display: flex;
+    width:100%;
+}
+
+
+/*Contact Us*/
+.contact{
+    max-height: fit-content;
+    background-color:#b97e9c;
+}
+#franchise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: red 2px solid;
+    padding:15px 15px;
+}
+#franchise h2{
+    font-size: 40px;
+    text-align: center;
+    color:rgb(245, 9, 9) ;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 20px;
+}
+#franchise h3{
+    padding:10px 10px;
+    font-size: 20px;
+    color: rgb(209, 35, 35);
+}
+#franchise p{
+    font-size:18px;
+    color:whitesmoke;    
+}
+
+#application ul{
+    padding: 25px 20px;
+    color: #241d1d;
+    font-weight: 700;
+    font-size:18px;
+}
+
+#application a{
+    background-color: #f44336;
+    color:#F1F1F1;
+    padding: 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: red 1px solid;
+    border-radius:5px;
+}
+
+#application a:hover{
+    background-color: #555555;
+    color: white;
+}
+
+/*footer*/
+.footer p{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    opacity: .70;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
